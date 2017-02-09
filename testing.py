@@ -114,9 +114,9 @@ while 1:
 
     parentscore = plainFitness.score(deciphered)
     count = 0
-
-    for i in range(0, len(topChars)):
-            parentkey[ parentkey.index( topChars[i] )], parentkey[ alphaString.index(topChars[i]) ] = parentkey[ alphaString.index(topChars[i]) ],parentkey[ parentkey.index( topChars[i] )]
+    if i == 1:
+        for i in range(0, len(topChars)):
+                parentkey[ parentkey.index( topChars[i] )], parentkey[ alphaString.index(topChars[i]) ] = parentkey[ alphaString.index(topChars[i]) ],parentkey[ parentkey.index( topChars[i] )]
 
     while count < 1500:
         a = random.randint(0,25)
